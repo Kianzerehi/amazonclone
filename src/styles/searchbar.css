@@ -1,0 +1,23 @@
+.search-section{
+    display: flex;
+   }
+   .search-icon{
+    background-color: rgb(254, 189, 105);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 37px;
+    width: 40px;
+    cursor: pointer;
+    
+   }
+
+.search-bar{
+    height: 37px;
+    width:50rem;
+    border: none;
+    outline-color: rgb(254, 189, 105);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 110%;
+}

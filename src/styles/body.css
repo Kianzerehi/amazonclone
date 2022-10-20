@@ -1,0 +1,23 @@
+*{
+  font-family: sans-serif ;
+}
+.amazon-background{
+    display: flex;
+    justify-content: center;
+}
+
+.amazon-photo{
+  width: 1650px;
+  mask-image: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.3)100%);
+  z-index: -1;
+  margin-bottom: -150px;
+  }
+
+  
+.first-row{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+ justify-items: center;
+ margin-left: 100px;
+  gap: 15px;
+  max-width: 1650px;}
