@@ -3,8 +3,10 @@ import '../amazon-logo.png'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchBar from "./searchbar";
 
-export default function NavBar(){
-    return(
+
+function NavBar() {
+    
+   return(
         <div className="nav-bar">
             <img className="amazon-logo hovers" src={require("../amazon-logo.png")} />
             
@@ -22,10 +24,11 @@ export default function NavBar(){
         </div>
 
         <div className="hovers">
-            <ShoppingCartIcon /> <div>(0)</div>
+            <ShoppingCartIcon /> <div className="item-quantity">(0)</div>
         </div>
         
        
         </div>
     )
 }
+export default NavBar

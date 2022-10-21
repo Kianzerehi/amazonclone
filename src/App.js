@@ -9,20 +9,21 @@ import './styles/checkout.css'
 import Body from './Components/body'
 import Checkout from './Components/checkout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import React from 'react';
 
 
 
 
-function App() {
+function App () {
   return (
   <Router>
-  
-    <NavBar />
+    
+      <NavBar />
     <Routes>
-    <Route path='/' element={<Body />}/>
-    <Route path='/checkout' element={<Checkout />}/>
-   </Routes>
-    </Router>)
+      <Route path='/' element={<Body />}/>
+      <Route path='/checkout' element={<Checkout />}/>
+    </Routes>
+  </Router>)
 }
 
 export default App;

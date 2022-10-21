@@ -2,12 +2,17 @@ import React from "react";
 import SearchIcon from '@mui/icons-material/Search';
 
 
+
 export default function SearchBar(){
+   
+
+
+
     return(
         <div className="search-section">
             
             <div >
-                <input className="search-bar" type='search' />
+                <input className="search-bar" type='search'  />
             </div>
                
                
@@ -17,7 +22,10 @@ export default function SearchBar(){
            
             
             
-            <div className="search-results"></div>
+            <div className="search-results">
+           
+
+            </div>
 
 
 
