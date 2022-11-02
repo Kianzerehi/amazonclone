@@ -14,10 +14,12 @@
   }
 
   
-.first-row{
+.product-row{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   margin-left: 7em/*100px*/;
   gap: 15px;
   max-width: 1650px;}
+
+  

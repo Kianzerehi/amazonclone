@@ -1,0 +1,38 @@
+
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  black;
+    max-width: 300px;
+    margin-left: 50em;
+    
+}
+.register-logo{
+    width: 100px;
+  
+}
+.register-input{
+border: 1px solid #E77600;
+padding: 10px;
+margin: 10px;
+}
+
+.amazon-button{
+    cursor: pointer;
+    background-color:#F1C75D;
+    width: 95%;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: 600; 
+    margin-top: 10px;
+    border: 1px solid #846A29;
+}
+.a-footer{
+    text-align: center;
+    font-size: small;
+    margin-top: 5px;
+
+}

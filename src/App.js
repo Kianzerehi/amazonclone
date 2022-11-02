@@ -1,13 +1,16 @@
 
 import './App.css';
-import NavBar from './Components/navbar';
-import './styles/navbar.css'
-import './styles/searchbar.css'
-import './styles/body.css'
-import './styles/card.css'
-import './styles/checkout.css'
-import Body from './Components/body'
-import Checkout from './Components/checkout';
+import { useState } from 'react';
+import NavBar from './Components/Navbar/Navbar';
+import './Components/Navbar/navbar.css'
+import './Components/Search-Bar/searchbar.css'
+import './Components/Body/body.css'
+import './Components/Card/card.css'
+import './Components/Checkout/checkout.css'
+import './Components/Register/register.css'
+import Body from './Components/Body/Body'
+import Checkout from './Components/Checkout/Checkout';
+import Register from './Components/Register/Register-component'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import React from 'react';
 
@@ -15,15 +18,24 @@ import React from 'react';
 
 
 function App () {
-  return (
+    
+  return ( 
+  
   <Router>
     
-      <NavBar />
-    <Routes>
+    <NavBar /> 
+  <Routes>
       <Route path='/' element={<Body />}/>
       <Route path='/checkout' element={<Checkout />}/>
-    </Routes>
-  </Router>)
+      <Route path='/register' element={<Register />}/>
+      
+  </Routes>
+  </Router>
+  
+  
+        
+      
+      )
 }
 
 export default App;
