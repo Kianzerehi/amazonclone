@@ -15,7 +15,7 @@ export default function NavBar(props) {
            <Link to='/'> <img className="amazon-logo hovers" src={require("../../amazon-logo.png")} /></Link>
             
         <SearchBar />
-        <Link to='register'>
+        <Link to='signin'>
         <div className="nav-right hovers"> 
         
             <span className="nav-top">Hello, sign in </span>

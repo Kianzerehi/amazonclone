@@ -1,0 +1,39 @@
+.signin-container{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+width: 20vw;
+
+
+}
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    align-items: center;
+    justify-content: center;
+   margin: auto;
+   
+}
+
+.login-input{
+    width: 15vw;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+
+.login-button{
+cursor: pointer;
+background-color:#F1C75D;
+border-radius: 8px;
+font-family: sans-serif;
+width: 13vw;
+padding: 6px;
+font-weight: bold;
+border: 1px solid rgba(0, 0, 0, 0.16) ;
+ 
+
+}
+
+

@@ -21,3 +21,10 @@
     border-bottom-left-radius: 5px;
     font-size: 110%;
 }
+.dropdown{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    color: black;
+}
