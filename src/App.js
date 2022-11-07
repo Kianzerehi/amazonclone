@@ -13,6 +13,7 @@ import Register from './Components/Register/Register-component'
 import SignIn from './Components/SignIn/sign-in';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import React from 'react';
+import './firebaseF/firebase'
 
 
 
