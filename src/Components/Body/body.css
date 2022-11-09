@@ -1,27 +1,24 @@
-*{
-  font-family: sans-serif ;
+* {
+  font-family: sans-serif;
 }
-.amazon-background{
-    display: flex;
-    justify-content: center;
+.amazon-background {
+  display: flex;
+  justify-content: center;
 }
 
-.amazon-photo{
+.amazon-photo {
   width: 1650px;
-  mask-image: linear-gradient(rgba(0,0,0,1),  rgba(0,0,0,0.3)100%);
+  mask-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3) 100%);
   z-index: -1;
   margin-bottom: -150px;
-  }
+}
 
-  
-.product-row{
+.product-row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  margin-left: 7em/*100px*/;
+  margin-left: 7em /*100px*/;
   gap: 1rem;
   min-width: 1500px;
-  max-width: 1650px
-  ;}
-
-  
+  max-width: 1650px;
+}

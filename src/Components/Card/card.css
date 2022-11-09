@@ -1,47 +1,40 @@
-
-.product-card{
-    background-color: whitesmoke;
-    height: 400px;
-    width: 400px;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    
-    
-    
-    
+.product-card {
+  background-color: whitesmoke;
+  height: 400px;
+  width: 400px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
-.product-info{
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-   
-
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.product-title{
-    font-weight: bolder;
+.product-title {
+  font-weight: bolder;
 }
-.product-price{
-    font-weight: 400;
+.product-price {
+  font-weight: 400;
 }
-.amazon-button{
-    cursor: pointer;
-    background-color: rgb(254, 189, 105);
-    width: 95%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 3px grey;
-    margin-top:-15px;
-    margin-bottom: 15px;
-    font-family: sans-serif;
-    font-weight: 600;                            
+.amazon-button {
+  cursor: pointer;
+  background-color: rgb(254, 189, 105);
+  width: 95%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px grey;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
 }
-.add-cart:hover{
-    opacity: 0.9;
+.add-cart:hover {
+  opacity: 0.9;
 }
-.product-logo{
-    width: 8em;
-    height: 10em;
+.product-logo {
+  width: 8em;
+  height: 10em;
 }

@@ -1,31 +1,27 @@
-.checkout-container{
-    display: flex;
-    flex-direction: column;
+.checkout-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.checkout-title{
-    font-weight: bolder;
-
+.checkout-title {
+  font-weight: bolder;
 }
-.checkout-body{
-    display: flex;
-    flex-direction: row;
-    
-
+.checkout-body {
+  display: flex;
+  flex-direction: row;
 }
 
-.checkout-proceed{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.checkout-proceed {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-
-.checkout-button{
-    background-color: #F7CA00;
-    width: 15rem;
-    padding: 8px 10px 8px 10px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+.checkout-button {
+  background-color: #f7ca00;
+  width: 15rem;
+  padding: 8px 10px 8px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
