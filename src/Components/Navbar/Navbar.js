@@ -8,7 +8,6 @@ export default function NavBar(props) {
   return (
     <div className="nav-bar">
       <Link to="/">
-        {" "}
         <img
           className="amazon-logo hovers"
           src={require("../../amazon-logo.png")}
@@ -22,17 +21,18 @@ export default function NavBar(props) {
           <span className="nav-bottom">Account & Lists</span>
         </div>
       </Link>
-
-      <div className="nav-right hovers">
-        <span className="nav-top">Returns</span>
-        <span className="nav-bottom">& Orders</span>
-      </div>
-
+      <Link to="returns">
+        <div className="nav-right hovers">
+          <span className="nav-top">Returns</span>
+          <span className="nav-bottom">& Orders</span>
+        </div>
+      </Link>
       <div className="hovers">
         <Link to="/checkout">
           <ShoppingCartIcon className="shopping-icon" />
+
+          <div className="item-quantity white">(0)</div>
         </Link>
-        <div className="item-quantity">(0)</div>
       </div>
     </div>
   );

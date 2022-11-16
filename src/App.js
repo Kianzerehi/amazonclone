@@ -7,6 +7,7 @@ import "./Components/Card/card.css";
 import "./Components/Checkout/checkout.css";
 import "./Components/Register/register.css";
 import "./Components/SignIn/signin.css";
+import "./Components/Returns/returns.css";
 import Body from "./Components/Body/Body";
 import Checkout from "./Components/Checkout/Checkout";
 import Register from "./Components/Register/Register-component";
@@ -14,6 +15,7 @@ import SignIn from "./Components/SignIn/sign-in";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import React from "react";
 import "./firebaseF/firebase";
+import ReturnsPage from "./Components/Returns/returns";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/returns" element={<ReturnsPage />} />
       </Routes>
     </Router>
   );

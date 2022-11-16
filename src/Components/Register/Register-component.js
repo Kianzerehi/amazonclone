@@ -53,7 +53,7 @@ export default function Register() {
       <div className="register-container">
         <Link to="/">
           <img
-            classname="register-logo"
+            className="register-logo"
             src={require("../../amazon-logo.png")}
             height="100px"
             width="300px"

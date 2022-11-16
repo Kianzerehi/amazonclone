@@ -4,26 +4,41 @@ import data from "../../fakeshop";
 
 export default function SearchBar() {
   const [searchField, setSearchField] = useState("");
+  const [filteredMerch, setFilteredMerch] = useState([]);
 
   const onSearchChange = (event) => {
-    const searchFieldString = event.target.value.toLocaleLowerCase();
-    setSearchField(searchFieldString);
+    setSearchField(event.target.value.toLocaleLowerCase());
+    const filterMethod = data.filter((item) => {
+      return item.title.toLocaleLowerCase().includes(searchField);
+    });
+
+    setFilteredMerch(filterMethod);
   };
-  const filteredMerch = data.filter((item) => {
-    return item.title.toLocaleLowerCase().includes(searchField);
-  });
 
-  console.log(filteredMerch);
-
+  console.log(filteredMerch, "filter");
+  console.log(searchField, "search");
   return (
     <div className="search-section">
-      <div>
+      <div className="search-bar-and-button">
         <input className="search-bar" type="search" onChange={onSearchChange} />
+        <button className="search-icon">
+          <SearchIcon />
+        </button>
+        <div></div>
+        <div className="search-group">
+          {filteredMerch.slice(0, 5).map((value) => {
+            return <p className="search-result">{value.title}</p>;
+          })}
+        </div>
       </div>
-      <button className="search-icon">
-        {" "}
-        <SearchIcon />{" "}
-      </button>
     </div>
   );
 }
+
+/*{filteredMerch.length != 0 && (
+        <div className="search-group">
+          {filteredMerch.slice(0, 5).map((value) => {
+            return <p className="search-result">{value.title} </p>;
+          })}
+        </div>
+      )}*/

@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import "./amazon-background.jpg";
 import Card from "../Card/Card";
 import data from "../../fakeshop";
-import NavBar from "../Navbar/Navbar";
-import BasicModal from "../full-item";
+import BasicModal from "./Product-Modal";
 
 export default function Body() {
   const [cartItems, setCartItems] = useState([]);
 
-  const productSummary = data.map((items) => {
+  const productSummary = data.map((items, i) => {
     return (
-      <div>
+      <div key={i}>
         <Card
           key={items.id}
           {...items}
